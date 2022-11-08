@@ -1,4 +1,4 @@
-let data;
+let table;
 const colorMap = {
   white_pop: 'maroon',
   black_pop: 'olive',
@@ -16,7 +16,7 @@ const sums = {
   "D": {white_pop:0,black_pop:0,hisp_pop:0,asian_pop:0,other_pop:0,total_pop:0},
 }
 function preload() {
-  data = loadTable("data/metro-grades.csv", "csv", "header");
+  table = loadTable("data/metro-grades.csv", "csv", "header");
 }
 
 function setup() {
@@ -24,7 +24,7 @@ function setup() {
   background(255);
   ellipseMode(RADIUS);
   noStroke();
-  for( const row of data.rows ) {
+  for( const row of table.rows ) {
     for( const popCategory of populationCategories) {
       sums[row.get("holc_grade")][popCategory] += int(row.get(popCategory))
     }

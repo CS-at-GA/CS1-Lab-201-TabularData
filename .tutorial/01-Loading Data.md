@@ -12,23 +12,24 @@ Another problem is actually reading the information in to the program and then i
 
 Let's take a look at how all of this works. 
 
-## `preload`
+## `preload` and `loadTable`
 
 ```javascript
-let data;
+let table;
 //...
 function preload() {
-  data = loadTable("data/metro-grades.csv", "csv", "header");
+  table = loadTable("data/metro-grades.csv", "csv", "header");
 }
 ```
 
 Pretty exciting. 
 
-The `loadTable` function takes as a first parameter the data file we are trying to load. In this case, the file is in a folder called `data`. The second parameter is telling `loadTable` that we are dealing with a `csv` file. The final parameter says that this file has a header row.[^1] Once the program starts, `setup` won't run until the the table is loaded into the `data` variable. 
+The `loadTable` function takes as a first parameter the data file we are trying to load. In this case, the file is in a folder called `data`. The second parameter is telling `loadTable` that we are dealing with a `csv` file. The final parameter says that this file has a header row.[^1] Once the program starts, `setup` won't run until the the table is loaded into the `table` variable.[^2] 
 
 ## `p5.Table`
 
-What is actually loaded is a complicated structure called a `p5.Table`. 
+What is actually loaded is a complicated structure called a `p5.Table`. The p5 reference has a list of all the magical things we can do with the table now that we have access to it. It is certainly worth the time to [read the documentation](https://p5js.org/reference/#/p5.Table), but we will also be hitting some of the highlights during this lab. 
 
 <!--Footer-->
 [^1]: It should be noted that sometimes `loadTable` is a little finicky. For instance, for this file, I had to delete the final, empty line of the file in order for the function to execute properly. Cleaning data is a big part of working with data. 
+[^2]: As always, there's nothing magical about the variable being named `table` here. We could as easily call it `justine` or `lemonPop`, but it does make _sense_ to call it `table` since it is, in fact, a table. 

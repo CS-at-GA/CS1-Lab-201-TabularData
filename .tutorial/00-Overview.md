@@ -9,21 +9,21 @@ The data set I am working with is a processed version of the data available from
 |C|Declining|
 |D|Hazardous|
 
-These maps became the foundation for housing descrimination in post-war America in many ways, the two most prominent being that a) certain groups of people (largely people of color) could not get loans for housing in categories A or B regardless of their actual ability to pay, and b) home values in categories C and D, where a disproportionate number of people of color lived, were interpreted to be much lower. These two factors combined to largely explain the gap of generational wealth in the populations. 
+These maps became the foundation for housing descrimination in post-war America in many ways, the two most prominent being that a) certain groups of people (largely people of color) could not get loans for housing in categories A or B regardless of their actual ability to pay, and b) home values in categories C and D, where a disproportionate number of people of color lived, were interpreted to be much lower. These two factors combined to largely explain the current gap of generational wealth in the populations. 
 
 The website [538](https://fivethirtyeight.com/) used this data for an article called [_The Lasting Legacy of Redlining_](https://projects.fivethirtyeight.com/redlining/) in which they explore how, despite the fact that the practice of redlining has been illegal for over fifty years, many metropolitan areas are still divided racially along the same lines drawn by the HOLC prior to World War 2. 
 
 The data produced[^1] by 538 is what we call _tabular_ data, which is to say that it can be thought of as being in a table (or a spreadsheet like Excel or Google Sheets). A row is an entry in the table and each column represents a different characteristic of that entry. The data looks like this.
 
-|Metro Area|HOLC Grade|...5 columns of population data...|... corrosponding percentage data...|...other data...|
+|Metro Area|HOLC Grade|...5 columns of population data...|... 5 columns of corrosponding percentage data...|...other data...|
 |----|----|----|----|----|
 
 So, each metro area has four entries, one for each of the grades, and each entry contains the population distribution for that metro area and grade. 
 
-This data is stored in what is called a `CSV` (Comma Separated Values) file. This is a common format for tabular data because it can be easily read and created by a computer. Each line in the file is a row in the table, including an optional header row. On each of the rows, data is seperated by commas, effectively dividing them into columns:
+This data is stored in what is called a `csv` (Comma Separated Values) file. This is a common format for tabular data because it can be easily read and created by a computer. Each line in the file is a row in the table, including an optional header row. On each of the rows, data is seperated by commas, effectively dividing them into columns:
 
 ```csv
-"Philadelphia",C,"104259","179683","79519","16407","15719","395587",...
+"Philadelphia...",C,"104259","179683","79519","16407","15719","395587",...
 ```
 
 What we will eventually build in this lab are aggregate pie charts for each of the grades across all population categories, along with a reference pie chart representing the population distribution. 
