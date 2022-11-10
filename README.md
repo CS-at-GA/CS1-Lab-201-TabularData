@@ -28,7 +28,7 @@ This data is stored in what is called a `csv` (Comma Separated Values) file. Thi
 
 What we will eventually build in this lab are aggregate pie charts for each of the grades across all population categories, along with a reference pie chart representing the population distribution. 
 
-![Pie charts for each HOLC Grade with population representation!](./tutorial/assets/lab201-redlining-final.png "HOLC Grade Pie Charts")
+![Pie charts for each HOLC Grade with population representation!](.tutorial/assets/lab201-redlining-final.png "HOLC Grade Pie Charts")
 
 <!--Footnotes-->
 [^1]: Produced really isn't the right word, but they've consolidated a large amount of data and put it into a useful format. 
