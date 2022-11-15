@@ -2,6 +2,7 @@ let table;
 let currentRowIndex;
 let minQ = Infinity;
 let maxQ = -Infinity;
+
 function preload() {
   table = loadTable("data/metro-grades.csv", "csv", "header");
 }

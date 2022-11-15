@@ -30,5 +30,9 @@ What we will eventually build in this lab are aggregate pie charts for each of t
 
 ![Pie charts for each HOLC Grade with population representation!](assets/lab201-redlining-final.png "HOLC Grade Pie Charts")
 
+## Addtional Resources:
+
+[_Mapping the Legacy of Structural Racism in Philadelphia_](https://controller.phila.gov/philadelphia-audits/mapping-the-legacy-of-structural-racism-in-philadelphia/) - Information produced by The Office of the City Controller connecting violence and poverty to redlining practices. (Thank you Mr. Moyer) 
+
 <!--Footnotes-->
 [^1]: Produced really isn't the right word, but they've consolidated a large amount of data and put it into a useful format. 
